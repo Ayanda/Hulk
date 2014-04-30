@@ -44,7 +44,7 @@ public class LoginServlet extends HttpServlet {
         LoginBean loginBean = new LoginBean();
         try {
             loginBean.setUsername(request.getParameter("username"));
-            loginBean.setPassword(request.getParameter("username"));
+            loginBean.setPassword(request.getParameter("password"));
             boolean isValid = staffloginFacade.validateLogin(loginBean.getUsername(), loginBean.getPassword());
             if (isValid) {
                 HttpSession session = request.getSession(true);
@@ -55,8 +55,8 @@ public class LoginServlet extends HttpServlet {
             } else {
                 System.out.println("LOgin Bad");
                 request.getRequestDispatcher("/LoginFailure.jsp").forward(request, response);
-                wait(5000000);
-                request.getRequestDispatcher("/index.jsp").forward(request, response);
+                //wait(5000000);
+                //request.getRequestDispatcher("/index.jsp").forward(request, response);
             }
 
         } finally {

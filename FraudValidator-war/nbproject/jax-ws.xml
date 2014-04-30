@@ -5,43 +5,6 @@
       <implementation-class>org.fraudvalidation.web.webservices.LoginStaffWebService</implementation-class>
     </service>
   </services>
-  <clients>
-    <client name="NewWebService">
-      <wsdl-url>http://localhost:31906/NewWebService/NewWebService?wsdl</wsdl-url>
-      <local-wsdl-file>localhost_31906/NewWebService/NewWebService.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">org.fraudvalidation.web.webserviceclients</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <use-dispatch>true</use-dispatch>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:31906/NewWebService/NewWebService?wsdl</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>org.fraudvalidation.web.webserviceclients</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
-  </clients>
+  <clients/>
+  <jsr109>false</jsr109>
 </jax-ws>
